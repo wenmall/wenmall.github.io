@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/docs/templates_creating.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/templates_creating.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/templates_creating.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/templates_creating.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/templates_creating.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/templates_creating.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/templates_creating.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <meta name="generator" content="Hexo 3.7.0">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="文档">
+  <!-- Open Graph -->
+  <meta name="description" content="Creating TemplatesMicroweber templates live within their own folders under userfiles/templates/. The template folder name is restricted to lowercase alphanumeric (a-z, 0-9), underscore (_) and dash (-">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文档">
+<meta property="og:url" content="https://hexo.io/docs/templates_creating.html">
+<meta property="og:site_name" content="文档">
+<meta property="og:description" content="Creating TemplatesMicroweber templates live within their own folders under userfiles/templates/. The template folder name is restricted to lowercase alphanumeric (a-z, 0-9), underscore (_) and dash (-">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://hexo.io/docs/img/layout_selector.png">
+<meta property="og:image" content="https://hexo.io/docs/img/editable_regions_classes.png">
+<meta property="og:updated_time" content="2016-04-17T21:48:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="文档">
+<meta name="twitter:description" content="Creating TemplatesMicroweber templates live within their own folders under userfiles/templates/. The template folder name is restricted to lowercase alphanumeric (a-z, 0-9), underscore (_) and dash (-">
+<meta name="twitter:image" content="https://hexo.io/docs/img/layout_selector.png">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/docs/" class="main-nav-link">Docs</a><a href="/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="docs/templates_creating.html">
+        
+          <option value="en" selected>English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br">Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/docs/templates_creating.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="Creating-Templates" class="article-heading"><a href="#Creating-Templates" class="headerlink" title="Creating Templates"></a>Creating Templates<a class="article-anchor" href="#Creating-Templates" aria-hidden="true"></a></h1><p>Microweber templates live within their own folders under <code>userfiles/templates/</code>. The template folder name is restricted to lowercase alphanumeric (<code>a-z</code>, <code>0-9</code>), underscore (<code>_</code>) and dash (<code>-</code>). The template in examples on this page is located in <code>userfiles/templates/my_template</code></p>
+<ul>
+<li><a href="#file-structure">Basic File Structure</a></li>
+<li><a href="#configuration">Configuration</a></li>
+<li><a href="#header-footer">Header + Footer</a></li>
+<li><a href="#rendering-modules">Rendering Modules</a></li>
+<li><a href="#layouts">Layouts</a></li>
+</ul>
+<h2 id="Basic-File-Structure" class="article-heading"><a href="#Basic-File-Structure" class="headerlink" title=" Basic File Structure"></a><a name="file-structure"></a> Basic File Structure<a class="article-anchor" href="#Basic-File-Structure" aria-hidden="true"></a></h2><pre>
+/userfiles
+    /templates
+        /my_template
+         config.php
+         header.php
+         index.php
+         footer.php
+         clean.php
+</pre>
+
+<p>###Basic files and their purpose</p>
+<table>
+<thead>
+<tr>
+<th>Filename</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>config.php</td>
+<td>holds the information for  your template, like name, version</td>
+</tr>
+<tr>
+<td>index.php</td>
+<td>homepage default layout</td>
+</tr>
+<tr>
+<td>header.php</td>
+<td>site header</td>
+</tr>
+<tr>
+<td>footer.php</td>
+<td>site footer</td>
+</tr>
+<tr>
+<td>clean.php</td>
+<td>default layout for page</td>
+</tr>
+<tr>
+<td>inner.php</td>
+<td>default layout for post</td>
+</tr>
+</tbody>
+</table>
+<h2 id="Configuration" class="article-heading"><a href="#Configuration" class="headerlink" title=" Configuration"></a><a name="configuration"></a> Configuration<a class="article-anchor" href="#Configuration" aria-hidden="true"></a></h2><p>Here is example config file you must create in your template folder</p>
+<pre><code>userfiles/templates/my_template/config.php
+</code></pre><p>Defining the <code>$config</code> array in this file makes the template appear in the admin panel.</p>
+<p><em>Example</em> <code>config.php</code><br><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line">$config = <span class="keyword">array</span>(</span><br><span class="line">  <span class="string">'name'</span> =&gt; <span class="string">'My Template'</span>,</span><br><span class="line">  <span class="string">'author'</span> =&gt; <span class="string">'Author Name'</span>,</span><br><span class="line">  <span class="string">'version'</span> =&gt; <span class="number">1.0</span>,</span><br><span class="line">  <span class="string">'url'</span> =&gt; <span class="string">'http://author.com/my-template'</span></span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<h2 id="Header-Footer" class="article-heading"><a href="#Header-Footer" class="headerlink" title=" Header + Footer"></a><a name="header-footer"></a> Header + Footer<a class="article-anchor" href="#Header-Footer" aria-hidden="true"></a></h2><p>Template header and footer can be loaded within the template layout to add common assets, scripts and styles for the website.</p>
+<p><em>Example</em> <code>header.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;!DOCTYPE HTML&gt;</span><br><span class="line">&lt;html prefix=&quot;og: http://ogp.me/ns#&quot;&gt;</span><br><span class="line">    &lt;head&gt;</span><br><span class="line">        &lt;title&gt;&#123;content_meta_title&#125;&lt;/title&gt;</span><br><span class="line">        &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span><br><span class="line">        &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;</span><br><span class="line">        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1, user-scalable=no&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--  Site Meta Data  --&gt;</span><br><span class="line">        &lt;meta name=&quot;keywords&quot; content=&quot;&#123;content_meta_keywords&#125;&quot;&gt;</span><br><span class="line">        &lt;meta name=&quot;description&quot; content=&quot;&#123;content_meta_description&#125;&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--  Site Open Graph Meta Data  --&gt;</span><br><span class="line">        &lt;meta property=&quot;og:title&quot; content=&quot;&#123;content_meta_title&#125;&quot;&gt;</span><br><span class="line">        &lt;meta property=&quot;og:type&quot; content=&quot;&#123;og_type&#125;&quot;&gt;</span><br><span class="line">        &lt;meta property=&quot;og:url&quot; content=&quot;&#123;content_url&#125;&quot;&gt;</span><br><span class="line">        &lt;meta property=&quot;og:image&quot; content=&quot;&#123;content_image&#125;&quot;&gt;</span><br><span class="line">        &lt;meta property=&quot;og:description&quot; content=&quot;&#123;og_description&#125;&quot;&gt;</span><br><span class="line">        &lt;meta property=&quot;og:site_name&quot; content=&quot;&#123;og_site_name&#125;&quot;&gt;</span><br><span class="line"></span><br><span class="line">        &lt;!--  Loading CSS and Javascripts  --&gt;</span><br><span class="line">        &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;</span><br><span class="line">          href=&quot;&lt;?php print template_url(&apos;css/style.css&apos;); ?&gt;&quot; /&gt;</span><br><span class="line">        &lt;script type=&quot;text/javascript&quot;</span><br><span class="line">          src=&quot;&lt;?php print template_url(&apos;assets/site.js&apos;); ?&gt;&quot;&gt;&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">    &lt;/head&gt;</span><br><span class="line">    &lt;body&gt;</span><br></pre></td></tr></table></figure></p>
+<p><em>Note:</em> Registering the <code>og</code> prefix in the <code>&lt;html&gt;</code> tag imports a metadata namespace from <code>ogp.me</code> for SEO optimization and improved link previews on user share in social media.</p>
+<p>You can use the <code>template_url()</code> function to get the URL to the template folder. The <code>template_dir()</code> function returns the full filesystem path to the template.</p>
+<p>The curly bracket syntax (<code>{content_meta_title}</code>) is replaced with the appropriate content when the template is rendered.</p>
+<p>Put any closing tags in <code>footer.php</code>, as well as common content like footer menus, copyright info, etc.</p>
+<p><em>Example</em> <code>footer.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">    &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Rendering-Modules" class="article-heading"><a href="#Rendering-Modules" class="headerlink" title=" Rendering Modules"></a><a name="rendering-modules"></a> Rendering Modules<a class="article-anchor" href="#Rendering-Modules" aria-hidden="true"></a></h2><p>To make the template functional modules need to be rendered.<br>You can also put global editable regions, so users can alter the content.</p>
+<p>Modules are loaded in place of the custom <code>&lt;module type=&quot;module_name&quot; /&gt;</code> tag.</p>
+<p><em>Example</em> in <code>header.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;header&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;edit&quot; rel=&quot;global&quot; field=&quot;header&quot;&gt;</span><br><span class="line">        &lt;h1&gt;</span><br><span class="line">          &lt;a href=&quot;&lt;?php print site_url(); ?&gt;&quot;&gt;</span><br><span class="line">            &lt;?php echo get_option(&apos;website_title&apos;, &apos;website&apos;); ?&gt;</span><br><span class="line">          &lt;/a&gt;</span><br><span class="line">        &lt;/h1&gt;</span><br><span class="line">        &lt;module type=&quot;menu&quot; name=&quot;header_menu&quot;</span><br><span class="line">          id=&quot;main-navigation&quot; template=&quot;pills&quot;  /&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<p><em>Example</em> in <code>footer.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;div id=&quot;footer&quot; class=&quot;edit&quot; field=&quot;footer&quot; rel=&quot;global&quot;&gt;</span><br><span class="line">    &lt;div&gt;Copyright &amp;copy; &lt;?php print date(&apos;Y&apos;);  ?&gt; All rights reserved&lt;/div&gt;</span><br><span class="line">    &lt;module type=&quot;menu&quot; name=&quot;footer_menu&quot; /&gt;</span><br><span class="line">&lt;/div&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Layouts" class="article-heading"><a href="#Layouts" class="headerlink" title="Layouts "></a>Layouts <a name="layouts"></a><a class="article-anchor" href="#Layouts" aria-hidden="true"></a></h2><p>Templates have one or more “layouts”, or pages.<br>The vast majority of sites need complex structure with different types of screens; this can be acheived by adding a variety of page layouts to your template.</p>
+<p>Each page layout is rendered separately but you can define common regions, such as <code>header</code>, <code>footer</code> or <code>sidebar</code> to share code between layouts.</p>
+<p>Create different layouts to allow users to change the layout, design or impression depending on the type of pages for their blog, shop or contact form.</p>
+<p><img src="img/layout_selector.png"></p>
+<p>Layouts are php scripts located in the template’s folder or subfolders, e.g. <code>/userfiles/templates/my_template/layouts/</code>. The <code>index.php</code> file is used as a homepage layout.</p>
+<p>Microweber recognizes layout files by scanning the template folder for scripts annotated with the following comment syntax in the beginning:<br><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">  type: layout</span></span><br><span class="line"><span class="comment">  name: Shop</span></span><br><span class="line"><span class="comment">  content_type: static</span></span><br><span class="line"><span class="comment">  description: Suitable for e-commerce pages</span></span><br><span class="line"><span class="comment">*/</span></span><br></pre></td></tr></table></figure></p>
+<p>Different layouts can be set for every page when editing it in the website administration.</p>
+<p>The <code>clean</code> layout is used by default for new pages and also as a fallback layout if no other can be found.</p>
+<p><em>Example</em> <code>clean.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">/*</span><br><span class="line">type: layout</span><br><span class="line">content_type: static</span><br><span class="line">name: Clean</span><br><span class="line">position: 2</span><br><span class="line">description: Default</span><br><span class="line">*/</span><br><span class="line">?&gt;</span><br><span class="line">&lt;?php include template_dir(). &quot;header.php&quot;; ?&gt;</span><br><span class="line">&lt;div id=&quot;content&quot;&gt; </span><br><span class="line">  &lt;div class=&quot;container edit&quot;  field=&quot;content&quot; rel=&quot;content&quot;&gt;</span><br><span class="line">    &lt;p&gt;This is my text&lt;/p&gt;</span><br><span class="line">  &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;?php include template_dir(). &quot;footer.php&quot;; ?&gt;</span><br></pre></td></tr></table></figure></p>
+<h2 id="Editable-Regions" class="article-heading"><a href="#Editable-Regions" class="headerlink" title="Editable Regions"></a>Editable Regions<a class="article-anchor" href="#Editable-Regions" aria-hidden="true"></a></h2><p>Editable regions can be defined by adding the <code>edit</code> class to any html element.</p>
+<p><em>Example</em> <code>index.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">/*</span><br><span class="line">  type: layout</span><br><span class="line">  content_type: static</span><br><span class="line">  name: Home</span><br><span class="line">  description: Landing page</span><br><span class="line">*/</span><br><span class="line">?&gt;</span><br><span class="line">&lt;?php include template_dir().&apos;header.php&apos;; ?&gt;</span><br><span class="line">&lt;div class=&quot;container&quot;&gt;</span><br><span class="line">    &lt;div class=&quot;edit&quot; field=&quot;content&quot; rel=&quot;content&quot;&gt;</span><br><span class="line">        &lt;h2&gt;Welcome to my homepage!&lt;/h2&gt;</span><br><span class="line">        &lt;p&gt;</span><br><span class="line">          This is my awesome Microweber template.&lt;br /&gt;</span><br><span class="line">          You can edit this text since its container has an &quot;edit&quot; class.</span><br><span class="line">        &lt;/p&gt;</span><br><span class="line">        &lt;p&gt;Just click here and start typing!&lt;/p&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/div&gt;</span><br><span class="line">&lt;?php include template_dir().&apos;footer.php&apos;;</span><br></pre></td></tr></table></figure></p>
+<h3 id="How-to-make-editable-regions" class="article-heading"><a href="#How-to-make-editable-regions" class="headerlink" title="How to make editable regions"></a>How to make editable regions<a class="article-anchor" href="#How-to-make-editable-regions" aria-hidden="true"></a></h3><p>You can define editable regions in your template where the user will be able to type text and Drag and Drop modules<br>The content of this region will be dynamic and will be editable on every layout that includes it.</p>
+<p>Here is how it looks like:</p>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"edit"</span>  <span class="attr">field</span>=<span class="string">"your_region_name"</span> <span class="attr">rel</span>=<span class="string">"content"</span>&gt;</span>      </span><br><span class="line">	<span class="tag">&lt;<span class="name">p</span>&gt;</span>Edit your content<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<p>Simply add class “<em>edit</em>“ and “<em>field</em>“ and “<em>rel</em>“ attributes to ANY html element.<br>As a developer you can decide how many editable regions you want. They are very flexible and can be re-used across pages.</p>
+<div class="mw-ui-box  mw-ui-box-info "><br><div class="mw-ui-box-header"><br><span class="mw-icon-info"></span><span>Creating editable field</span><br></div><br><div class="mw-ui-box-content"><br><ul><br><li>Add class “edit”</li><br><li>Add “field” attribute</li><br><li>Add “rel” attribute</li><br></ul><br></div><br></div>
+
+
+
+
+
+<h4 id="Editable-region-attributes" class="article-heading"><a href="#Editable-region-attributes" class="headerlink" title="Editable region attributes"></a>Editable region attributes<a class="article-anchor" href="#Editable-region-attributes" aria-hidden="true"></a></h4><p>Each editable region behaves differently in dependence of the rel and field attributes you add to it</p>
+<p><strong><code>field</code> attribute</strong></p>
+<p>The <code>field</code> attribute will help you to define multiple content-editable regions in your layout.</p>
+<p>Add attribute <code>field=&quot;some_name&quot;</code> and set the name of your field in your template.<br>The main content region that the user sees during the “Add content” process must have <code>field=&quot;content&quot;</code></p>
+<p><strong><code>rel</code> attribute</strong></p>
+<p>The <code>rel</code> attribute is responsible for the “scope” of your content-editable field.  </p>
+<p>You can define custom scope and reuse the content of the editable regions across the whole website.</p>
+<p>Add attribute rel and set the scope of your field.</p>
+<ul>
+<li><code>rel=&quot;content&quot;</code> - changes for every page or post</li>
+<li><code>rel=&quot;global&quot;</code> - changes for the whole site</li>
+<li><code>rel=&quot;page&quot;</code> - changes for every page and sub-page</li>
+<li><code>rel=&quot;post&quot;</code> - changes for every post</li>
+<li><code>rel=&quot;inherit&quot;</code> - changes for every main page, but not is sub-pages and posts</li>
+<li><code>rel=&quot;your_custom_rel&quot;</code> you can define your own scope</li>
+</ul>
+<h5 id="other-attributes" class="article-heading"><a href="#other-attributes" class="headerlink" title="other attributes"></a>other attributes<a class="article-anchor" href="#other-attributes" aria-hidden="true"></a></h5><p>There is optional attribute “rel-id”, which allows you to display editable regions that belong to another content</p>
+<h4 id="Default-content-region" class="article-heading"><a href="#Default-content-region" class="headerlink" title="Default content region"></a>Default content region<a class="article-anchor" href="#Default-content-region" aria-hidden="true"></a></h4><p>The default region that shows in the Admin panel is defined by <code>rel=&quot;content&quot;</code> and  <code>field=&quot;content&quot;</code> attributes of your html element</p>
+<p><img src="img/editable_regions_classes.png" alt="editable_regions_classes.png"></p>
+<h2 id="Microweber-template-layouts-recommended-filenames-standard" class="article-heading"><a href="#Microweber-template-layouts-recommended-filenames-standard" class="headerlink" title="Microweber template layouts recommended filenames standard"></a>Microweber template layouts recommended filenames standard<a class="article-anchor" href="#Microweber-template-layouts-recommended-filenames-standard" aria-hidden="true"></a></h2><p>For the site content to be shown across different templates, we have a list of recommended filenames that you can use while creating your template. </p>
+<p>For easier management if files, you can put most of the page layouts in a subfolder of your template called <code>layouts</code>, for example <code>/userfiles/templates/my_template/layouts/blog.php</code></p>
+<table>
+<thead>
+<tr>
+<th>Filenames</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>index.php</code>, <code>index_1.php</code>, <code>index_2.php</code>, …</td>
+<td>Layouts for the home page</td>
+</tr>
+<tr>
+<td><code>header.php</code></td>
+<td>site header</td>
+</tr>
+<tr>
+<td><code>footer.php</code></td>
+<td>site footer</td>
+</tr>
+<tr>
+<td><code>editor.php</code></td>
+<td>layout the wyswyg editor in the admin</td>
+</tr>
+<tr>
+<td><code>clean.php</code></td>
+<td>layout for page</td>
+</tr>
+<tr>
+<td><code>inner.php</code></td>
+<td>layout for post</td>
+</tr>
+<tr>
+<td><code>login.php</code></td>
+<td>layout user login</td>
+</tr>
+<tr>
+<td><code>register.php</code></td>
+<td>layout user register</td>
+</tr>
+<tr>
+<td><code>profile.php</code></td>
+<td>layout for user profile management</td>
+</tr>
+<tr>
+<td><code>layouts/gallery.php</code></td>
+<td>for gallery page</td>
+</tr>
+<tr>
+<td><code>layouts/contact.php</code></td>
+<td>for contact page</td>
+</tr>
+<tr>
+<td><code>layouts/about.php</code></td>
+<td>for about page</td>
+</tr>
+<tr>
+<td><code>layouts/blog.php</code>, <code>layouts/blog_1.php</code>, <code>layouts/blog_2.php</code>, …</td>
+<td>for blog</td>
+</tr>
+<tr>
+<td><code>layouts/blog_inner.php</code>, <code>layouts/blog_1_inner.php</code>, <code>layouts/blog_2_inner.php</code>, …</td>
+<td>for blog post</td>
+</tr>
+<tr>
+<td><code>layouts/shop.php</code>, <code>layouts/shop_1.php</code>, <code>layouts/shop_2.php</code>, …</td>
+<td>for shop</td>
+</tr>
+<tr>
+<td><code>layouts/shop_inner.php</code>, <code>layouts/shop_1_inner.php</code>, <code>layouts/shop_2_inner.php</code>, …</td>
+<td>for shop product inner page</td>
+</tr>
+<tr>
+<td><code>layouts/portfolio.php</code>, <code>layouts/portfolio_1.php</code>, <code>layouts/portfolio_2.php</code>, …</td>
+<td>for portfolio</td>
+</tr>
+<tr>
+<td><code>layouts/portfolio_inner.php</code>, <code>layouts/portfolio_1_inner.php</code>, <code>layouts/portfolio_2_inner.php</code>, …</td>
+<td>for portfolio inner page</td>
+</tr>
+</tbody>
+</table>
+<p>All those layouts are optional, you dont have to create them for all templates</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-04-17T21:48:34.000Z" itemprop="dateModified">Last updated: 2016-04-17</time>
+                <a href="index.html" class="article-footer-next" title="Overview"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/docs/templates_creating.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Creating-Templates"><span class="toc-text">Creating Templates</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Basic-File-Structure"><span class="toc-text"> Basic File Structure</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Configuration"><span class="toc-text"> Configuration</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Header-Footer"><span class="toc-text"> Header + Footer</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rendering-Modules"><span class="toc-text"> Rendering Modules</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Layouts"><span class="toc-text">Layouts </span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Editable-Regions"><span class="toc-text">Editable Regions</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#How-to-make-editable-regions"><span class="toc-text">How to make editable regions</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Editable-region-attributes"><span class="toc-text">Editable region attributes</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#other-attributes"><span class="toc-text">other attributes</span></a></li></ol></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Default-content-region"><span class="toc-text">Default content region</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Microweber-template-layouts-recommended-filenames-standard"><span class="toc-text">Microweber template layouts recommended filenames standard</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Getting Started</strong><a href="index.html" class="sidebar-link">Overview</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuration</a><a href="commands.html" class="sidebar-link">Commands</a><a href="migration.html" class="sidebar-link">Migration</a><strong class="sidebar-title">Basic Usage</strong><a href="writing.html" class="sidebar-link">Writing</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Asset Folders</a><a href="data-files.html" class="sidebar-link">Data Files</a><a href="server.html" class="sidebar-link">Server</a><a href="generating.html" class="sidebar-link">Generating</a><a href="deployment.html" class="sidebar-link">Deployment</a><strong class="sidebar-title">Customization</strong><a href="permalinks.html" class="sidebar-link">Permalinks</a><a href="themes.html" class="sidebar-link">Themes</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variables</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internationalization (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscellaneous</strong><a href="troubleshooting.html" class="sidebar-link">Troubleshooting</a><a href="contributing.html" class="sidebar-link">Contributing</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2018 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/docs/" class="mobile-nav-link">Docs</a><a href="/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Getting Started</strong><a href="index.html" class="mobile-nav-link">Overview</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuration</a><a href="commands.html" class="mobile-nav-link">Commands</a><a href="migration.html" class="mobile-nav-link">Migration</a><strong class="mobile-nav-title">Basic Usage</strong><a href="writing.html" class="mobile-nav-link">Writing</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Asset Folders</a><a href="data-files.html" class="mobile-nav-link">Data Files</a><a href="server.html" class="mobile-nav-link">Server</a><a href="generating.html" class="mobile-nav-link">Generating</a><a href="deployment.html" class="mobile-nav-link">Deployment</a><strong class="mobile-nav-title">Customization</strong><a href="permalinks.html" class="mobile-nav-link">Permalinks</a><a href="themes.html" class="mobile-nav-link">Themes</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variables</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internationalization (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscellaneous</strong><a href="troubleshooting.html" class="mobile-nav-link">Troubleshooting</a><a href="contributing.html" class="mobile-nav-link">Contributing</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/templates_creating.html">
+      
+        <option value="en" selected>English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br">Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/js/lang_select.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<!-- endbuild -->
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
+  indexName: 'hexo',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>

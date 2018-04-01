@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head prefix="og: http://ogp.me/ns#">
+  <meta charset="utf-8">
+  <title>文档</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Canonical links -->
+  <link rel="canonical" href="https://hexo.io/docs/modules_data.html">
+  <!-- Alternative links -->
+  
+    
+      <link rel="alternative" hreflang="en" href="https://hexo.io/docs/modules_data.html">
+    
+      <link rel="alternative" hreflang="zh-tw" href="https://hexo.io/zh-tw/docs/modules_data.html">
+    
+      <link rel="alternative" hreflang="zh-cn" href="https://hexo.io/zh-cn/docs/modules_data.html">
+    
+      <link rel="alternative" hreflang="ru" href="https://hexo.io/ru/docs/modules_data.html">
+    
+      <link rel="alternative" hreflang="ko" href="https://hexo.io/ko/docs/modules_data.html">
+    
+      <link rel="alternative" hreflang="pt-br" href="https://hexo.io/pt-br/docs/modules_data.html">
+    
+  
+  <!-- Icon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-touch-icon-152x152.png">
+  <link rel="icon" type="image/png" href="/icon/favicon-196x196.png" sizes="196x196">
+  <link rel="icon" type="image/png" href="/icon/favicon-160x160.png" sizes="160x160">
+  <link rel="icon" type="image/png" href="/icon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="/icon/favicon-16x16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="/icon/favicon-32x32.png" sizes="32x32">
+  <meta name="msapplication-TileColor" content="#2f83cd">
+  <meta name="msapplication-TileImage" content="/icon/mstile-144x144.png">
+  <meta name="generator" content="Hexo 3.7.0">
+  <!-- CSS -->
+  <!-- build:css build/css/navy.css -->
+  <link rel="stylesheet" href="/css/navy.css">
+  <!-- endbuild -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.css">
+  <!-- RSS -->
+  <link rel="alternate" href="/atom.xml" title="文档">
+  <!-- Open Graph -->
+  <meta name="description" content="Saving and getting module dataDefining SchemaWhen installing a module Microweber checks the config.php file for the $config[&amp;#39;tables&amp;#39;] array.Each key represents a table name and its value is an">
+<meta property="og:type" content="website">
+<meta property="og:title" content="文档">
+<meta property="og:url" content="https://hexo.io/docs/modules_data.html">
+<meta property="og:site_name" content="文档">
+<meta property="og:description" content="Saving and getting module dataDefining SchemaWhen installing a module Microweber checks the config.php file for the $config[&amp;#39;tables&amp;#39;] array.Each key represents a table name and its value is an">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2016-04-17T21:48:34.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="文档">
+<meta name="twitter:description" content="Saving and getting module dataDefining SchemaWhen installing a module Microweber checks the config.php file for the $config[&amp;#39;tables&amp;#39;] array.Each key represents a table name and its value is an">
+<meta name="twitter:site" content="hexojs">
+<meta property="fb:admins" content="100000247608790">
+  <!-- Google Analytics -->
+  
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48498357-3', 'auto');
+  ga('send', 'pageview');
+</script>
+
+</head>
+
+<body>
+  <div id="container">
+    <header id="header" class="wrapper">
+  <div id="header-inner" class="inner">
+    <h1 id="logo-wrap">
+      <a href="/" id="logo">Hexo</a>
+    </h1>
+    <nav id="main-nav">
+      <a href="/docs/" class="main-nav-link">Docs</a><a href="/api/" class="main-nav-link">API</a><a href="/news/" class="main-nav-link">News</a><a href="/plugins/" class="main-nav-link">Plugins</a><a href="/themes/" class="main-nav-link">Themes</a>
+      <a href="https://github.com/hexojs/hexo" class="main-nav-link"><i class="fa fa-github-alt"></i></a>
+      <div id="search-input-wrap">
+        <div id="search-input-icon">
+          <i class="fa fa-search"></i>
+        </div>
+        <input type="search" id="search-input" placeholder="Search...">
+      </div>
+    </nav>
+    <div id="lang-select-wrap">
+      <label id="lang-select-label"><i class="fa fa-globe"></i><span>English</span></label>
+      <select id="lang-select" data-canonical="docs/modules_data.html">
+        
+          <option value="en" selected>English</option>
+        
+          <option value="zh-tw">正體中文</option>
+        
+          <option value="zh-cn">简体中文</option>
+        
+          <option value="ru">Русский</option>
+        
+          <option value="ko">한국어</option>
+        
+          <option value="pt-br">Português (Brasil)</option>
+        
+      </select>
+    </div>
+    <a id="mobile-nav-toggle">
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+      <span class="mobile-nav-toggle-bar"></span>
+    </a>
+  </div>
+</header>
+
+    <div id="content-wrap">
+  <div id="content" class="wrapper">
+    <div id="content-inner">
+      <article class="article-container" itemscope itemtype="http://schema.org/Article">
+        <div class="article-inner">
+          <div class="article">
+            <div class="inner">
+              <header class="article-header">
+                <h1 class="article-title" itemprop="name"></h1>
+                <a href="https://github.com/hexojs/site/edit/master/source/docs/modules_data.md" class="article-edit-link" title="Improve this doc"><i class="fa fa-pencil"></i></a>
+              </header>
+              <div class="article-content" itemprop="articleBody">
+                <h1 id="Saving-and-getting-module-data" class="article-heading"><a href="#Saving-and-getting-module-data" class="headerlink" title="Saving and getting module data"></a>Saving and getting module data<a class="article-anchor" href="#Saving-and-getting-module-data" aria-hidden="true"></a></h1><h2 id="Defining-Schema" class="article-heading"><a href="#Defining-Schema" class="headerlink" title="Defining Schema"></a>Defining Schema<a class="article-anchor" href="#Defining-Schema" aria-hidden="true"></a></h2><p>When installing a module Microweber checks the <code>config.php</code> file for the <code>$config[&#39;tables&#39;]</code> array.<br>Each key represents a table name and its value is an array of column definitions.<br>The ID column is automatically created and all columns are nullable by default.</p>
+<p><em>Example</em> <code>userfiles/modules/paintings/config.php</code><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$config = array();</span><br><span class="line">$config[&apos;name&apos;] = &quot;My Paintings&quot;;</span><br><span class="line">$config[&apos;author&apos;] = &quot;Pablo Picasso&quot;;</span><br><span class="line">$config[&apos;ui&apos;] = true; </span><br><span class="line">$config[&apos;ui_admin&apos;] = true; </span><br><span class="line">$config[&apos;position&apos;] = &quot;98&quot;;</span><br><span class="line">$config[&apos;version&apos;] = &quot;0.01&quot;;</span><br><span class="line">$config[&apos;tables&apos;] = array(</span><br><span class="line">        &apos;paintings&apos; =&gt; array(</span><br><span class="line">            &apos;id&apos; =&gt; &apos;integer&apos;,</span><br><span class="line">        	&apos;name&apos; =&gt; &apos;string&apos;,</span><br><span class="line">        	&apos;price&apos; =&gt; &apos;float&apos;,</span><br><span class="line">        	&apos;description&apos; =&gt; &apos;text&apos;,</span><br><span class="line">        	&apos;created_by&apos; =&gt; &apos;integer&apos;,</span><br><span class="line">            &apos;created_at&apos; =&gt; &apos;dateTime&apos;,</span><br><span class="line">        )</span><br><span class="line">);</span><br></pre></td></tr></table></figure></p>
+<h2 id="Custom-Tables" class="article-heading"><a href="#Custom-Tables" class="headerlink" title="Custom Tables"></a>Custom Tables<a class="article-anchor" href="#Custom-Tables" aria-hidden="true"></a></h2><p>For more options of the data storage you can read here.</p>
+<p><a href="modules_schema.md">Read more about making custom tables here</a>.</p>
+<h3 id="Getting-and-saving-data" class="article-heading"><a href="#Getting-and-saving-data" class="headerlink" title="Getting and saving data"></a>Getting and saving data<a class="article-anchor" href="#Getting-and-saving-data" aria-hidden="true"></a></h3><p>You can use the <a href="../functions/db_get.md" title="db_get">db_get</a>, <a href="../functions/db_save.md" title="db_save">db_save</a> and <a href="../functions/db_delete.md" title="db_delete">db_delete</a> functions to work with data from your those tables.</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">// Getting</span><br><span class="line">$data = db_get(&quot;table=paintings&quot;)</span><br><span class="line"></span><br><span class="line">// Saving</span><br><span class="line">$save = array(</span><br><span class="line">	&apos;name&apos; =&gt; &apos;Mona Lisa&apos;,</span><br><span class="line">	&apos;description&apos; =&gt; &apos;Paiting by Leonardo da Vinci&apos;</span><br><span class="line">);</span><br><span class="line">$id = db_save(&apos;paintings&apos;, $save);</span><br><span class="line"></span><br><span class="line">// Deleting</span><br><span class="line">db_delete(&apos;paintings&apos;, $id);</span><br></pre></td></tr></table></figure>
+<h4 id="Create" class="article-heading"><a href="#Create" class="headerlink" title="Create"></a>Create<a class="article-anchor" href="#Create" aria-hidden="true"></a></h4><p>The <code>db_save</code> function accepts table name as first argument and row data as a second argument. In order to create rows in a table simply don’t specify an ID.</p>
+<p><em>Example</em><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$data = array(</span><br><span class="line">	&apos;name&apos; =&gt; &apos;Three Musicians&apos;,</span><br><span class="line">	&apos;price&apos; =&gt; 2700,</span><br><span class="line">	&apos;description&apos; =&gt; &apos;My greatest work&apos;</span><br><span class="line">);</span><br><span class="line">db_save(&apos;paintings&apos;, $data);</span><br></pre></td></tr></table></figure></p>
+<h4 id="Read" class="article-heading"><a href="#Read" class="headerlink" title=" Read"></a><a name="crud-read"></a> Read<a class="article-anchor" href="#Read" aria-hidden="true"></a></h4><p>Call the <code>db_get</code> function and set the <code>table</code> key in the argument array to retrieve rows from a given database table.</p>
+<p><em>Example</em><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$rows = db_get(array(&apos;table&apos; =&gt; &apos;paintings&apos;));</span><br></pre></td></tr></table></figure></p>
+<p>Set the <code>single</code> key to <code>true</code> in the argument array for the function to return a single row.<br>Any non-reserved key name is treated as a <code>WHERE</code> condition for given column name. Reference the <a href="../functions/db_get.md"><code>db_get</code> function docs</a> for more details.</p>
+<p><em>Example</em><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">$row = db_get(array(</span><br><span class="line">	&apos;table&apos; =&gt; &apos;paintings&apos;,</span><br><span class="line">	&apos;name&apos; =&gt; &apos;Three Musicians&apos;,</span><br><span class="line">	&apos;single&apos; =&gt; true</span><br><span class="line">	));</span><br></pre></td></tr></table></figure></p>
+<p>Alternatively the above query can be written like that <code>db_get(&#39;table=paintings&amp;name=Three Musicians&amp;single=true&#39;)</code></p>
+<h4 id="Update" class="article-heading"><a href="#Update" class="headerlink" title="Update"></a>Update<a class="article-anchor" href="#Update" aria-hidden="true"></a></h4><p>If the <code>db_save</code> function receives an array containing an <code>id</code> key it performs an update operation on the corresponding row.</p>
+<p><em>Example</em><br><figure class="highlight php"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Gets single row with id = 3</span></span><br><span class="line">$row = db_get(<span class="keyword">array</span>(</span><br><span class="line">	<span class="string">'table'</span> =&gt; <span class="string">'paintings'</span>,</span><br><span class="line">	<span class="string">'id'</span> =&gt; <span class="number">3</span>,</span><br><span class="line">	<span class="string">'single'</span> =&gt; <span class="keyword">true</span></span><br><span class="line">	));</span><br><span class="line">$row[<span class="string">'title'</span>] = <span class="string">'My Awesome Painting'</span>;</span><br><span class="line"><span class="keyword">echo</span> <span class="string">'Updating row with ID '</span>, $row[<span class="string">'id'</span>];</span><br><span class="line">db_save(<span class="string">'paintings'</span>, $row);</span><br></pre></td></tr></table></figure></p>
+<h4 id="Delete" class="article-heading"><a href="#Delete" class="headerlink" title="Delete"></a>Delete<a class="article-anchor" href="#Delete" aria-hidden="true"></a></h4><p>The <code>db_delete</code> function returns <code>true</code> after successfully deleting row with a specified ID.</p>
+<p><em>Example</em><br><figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">db_delete(&apos;paintings&apos;, $id = 3);</span><br></pre></td></tr></table></figure></p>
+<h2 id="Advanced-Queries" class="article-heading"><a href="#Advanced-Queries" class="headerlink" title="Advanced Queries"></a>Advanced Queries<a class="article-anchor" href="#Advanced-Queries" aria-hidden="true"></a></h2><p>Reference the <a href="../functions/db_get.md"><code>db_get</code></a> and <a href="../functions/db_save.md"><code>db_save</code></a> documentation pages for a list of all available parameters.</p>
+
+              </div>
+              <footer class="article-footer">
+                <time class="article-footer-updated" datetime="2016-04-17T21:48:34.000Z" itemprop="dateModified">Last updated: 2016-04-17</time>
+                <a href="index.html" class="article-footer-next" title="Overview"><span>Next</span><i class="fa fa-chevron-right"></i></a>
+              </footer>
+              
+<section id="comments">
+  <div id="disqus_thread"></div>
+</section>
+<script>
+  var disqus_shortname = 'hexojs';
+  var disqus_url = 'https://hexo.io/docs/modules_data.html';
+  var disqus_title = "";
+  var disqus_config = function(){
+    this.language = 'en';
+  };
+  (function(){
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = 'https://go.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+            </div>
+          </div>
+          <aside id="article-toc" role="navigation">
+            <div id="article-toc-inner">
+              <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?zoneid=1673&serve=C6AILKT&placement=hexoio" id="_carbonads_js"></script>
+              <strong class="sidebar-title">Contents</strong>
+              <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Saving-and-getting-module-data"><span class="toc-text">Saving and getting module data</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Defining-Schema"><span class="toc-text">Defining Schema</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Custom-Tables"><span class="toc-text">Custom Tables</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Getting-and-saving-data"><span class="toc-text">Getting and saving data</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Create"><span class="toc-text">Create</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Read"><span class="toc-text"> Read</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Update"><span class="toc-text">Update</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Delete"><span class="toc-text">Delete</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Advanced-Queries"><span class="toc-text">Advanced Queries</span></a></li></ol></li></ol>
+              <a href="#" id="article-toc-top">Back to Top</a>
+            </div>
+          </aside>
+        </div>
+      </article>
+      <aside id="sidebar" role="navigation">
+  <div class="inner">
+    <strong class="sidebar-title">Getting Started</strong><a href="index.html" class="sidebar-link">Overview</a><a href="setup.html" class="sidebar-link">Setup</a><a href="configuration.html" class="sidebar-link">Configuration</a><a href="commands.html" class="sidebar-link">Commands</a><a href="migration.html" class="sidebar-link">Migration</a><strong class="sidebar-title">Basic Usage</strong><a href="writing.html" class="sidebar-link">Writing</a><a href="front-matter.html" class="sidebar-link">Front-matter</a><a href="tag-plugins.html" class="sidebar-link">Tag Plugins</a><a href="asset-folders.html" class="sidebar-link">Asset Folders</a><a href="data-files.html" class="sidebar-link">Data Files</a><a href="server.html" class="sidebar-link">Server</a><a href="generating.html" class="sidebar-link">Generating</a><a href="deployment.html" class="sidebar-link">Deployment</a><strong class="sidebar-title">Customization</strong><a href="permalinks.html" class="sidebar-link">Permalinks</a><a href="themes.html" class="sidebar-link">Themes</a><a href="templates.html" class="sidebar-link">Templates</a><a href="variables.html" class="sidebar-link">Variables</a><a href="helpers.html" class="sidebar-link">Helpers</a><a href="internationalization.html" class="sidebar-link">Internationalization (i18n)</a><a href="plugins.html" class="sidebar-link">Plugins</a><strong class="sidebar-title">Miscellaneous</strong><a href="troubleshooting.html" class="sidebar-link">Troubleshooting</a><a href="contributing.html" class="sidebar-link">Contributing</a>
+  </div>
+</aside>
+    </div>
+  </div>
+</div>
+
+    <footer id="footer" class="wrapper">
+  <div class="inner">
+    <div id="footer-copyright">
+      &copy; 2018 <a href="https://github.com/hexojs/hexo/graphs/contributors" target="_blank">Hexo</a><br>
+      Documentation licensed under <a href="http://creativecommons.org/licenses/by/4.0/" target="_blank">CC BY 4.0</a>.
+    </div>
+    <div id="footer-links">
+      <a href="https://twitter.com/hexojs" class="footer-link" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://github.com/hexojs/hexo" class="footer-link" target="_blank"><i class="fa fa-github-alt"></i></a>
+    </div>
+  </div>
+</footer>
+
+  </div>
+  <div id="mobile-nav-dimmer"></div>
+  <nav id="mobile-nav">
+  <div id="mobile-nav-inner">
+    <ul id="mobile-nav-list">
+      <a href="/docs/" class="mobile-nav-link">Docs</a><a href="/api/" class="mobile-nav-link">API</a><a href="/news/" class="mobile-nav-link">News</a><a href="/plugins/" class="mobile-nav-link">Plugins</a><a href="/themes/" class="mobile-nav-link">Themes</a>
+      <li class="mobile-nav-item">
+        <a href="https://github.com/hexojs/hexo" class="mobile-nav-link" rel="external" target="_blank">GitHub</a>
+      </li>
+    </ul>
+    
+      <strong class="mobile-nav-title">Getting Started</strong><a href="index.html" class="mobile-nav-link">Overview</a><a href="setup.html" class="mobile-nav-link">Setup</a><a href="configuration.html" class="mobile-nav-link">Configuration</a><a href="commands.html" class="mobile-nav-link">Commands</a><a href="migration.html" class="mobile-nav-link">Migration</a><strong class="mobile-nav-title">Basic Usage</strong><a href="writing.html" class="mobile-nav-link">Writing</a><a href="front-matter.html" class="mobile-nav-link">Front-matter</a><a href="tag-plugins.html" class="mobile-nav-link">Tag Plugins</a><a href="asset-folders.html" class="mobile-nav-link">Asset Folders</a><a href="data-files.html" class="mobile-nav-link">Data Files</a><a href="server.html" class="mobile-nav-link">Server</a><a href="generating.html" class="mobile-nav-link">Generating</a><a href="deployment.html" class="mobile-nav-link">Deployment</a><strong class="mobile-nav-title">Customization</strong><a href="permalinks.html" class="mobile-nav-link">Permalinks</a><a href="themes.html" class="mobile-nav-link">Themes</a><a href="templates.html" class="mobile-nav-link">Templates</a><a href="variables.html" class="mobile-nav-link">Variables</a><a href="helpers.html" class="mobile-nav-link">Helpers</a><a href="internationalization.html" class="mobile-nav-link">Internationalization (i18n)</a><a href="plugins.html" class="mobile-nav-link">Plugins</a><strong class="mobile-nav-title">Miscellaneous</strong><a href="troubleshooting.html" class="mobile-nav-link">Troubleshooting</a><a href="contributing.html" class="mobile-nav-link">Contributing</a>
+    
+  </div>
+  <div id="mobile-lang-select-wrap">
+    <span id="mobile-lang-select-label"><i class="fa fa-globe"></i><span>English</span></span>
+    <select id="mobile-lang-select" data-canonical="docs/modules_data.html">
+      
+        <option value="en" selected>English</option>
+      
+        <option value="zh-tw">正體中文</option>
+      
+        <option value="zh-cn">简体中文</option>
+      
+        <option value="ru">Русский</option>
+      
+        <option value="ko">한국어</option>
+      
+        <option value="pt-br">Português (Brasil)</option>
+      
+    </select>
+  </div>
+</nav>
+  <!-- Scripts -->
+<!-- build:js build/js/main.js -->
+<script src="/js/lang_select.js"></script>
+<script src="/js/toc.js"></script>
+<script src="/js/mobile_nav.js"></script>
+<!-- endbuild -->
+
+<!-- Algolia -->
+
+<script type="text/javascript" src="https://cdn.jsdelivr.net/docsearch.js/1/docsearch.min.js"></script>
+<script type="text/javascript">
+document.getElementById('search-input-wrap').classList.add('on');
+docsearch({
+  apiKey: 'c3d5d4c995b5e0c2ffb5623900279a66',
+  indexName: 'hexo',
+  inputSelector: '#search-input'
+});
+</script>
+
+
+</body>
+</html>
